@@ -16,6 +16,7 @@
 	></script>
 
 	<meta charset="windows-1250" />
+	<!-- TODO keywords -->
 	<meta
 		name="keywords"
 		content="hudba, kultura, akce, budějce, české, budějovice, žižkárna, koncerty, trhy, kapely, farmářské, program, workshop, divadlo, party, dj, koncerty, dhogh, muzika, ehmk, brownfield, eventy, industrial, hipster, populární, music, zizkarna, events, actual, popular, live, show, bar, drink, beer, pivo, shots, culture"
@@ -24,33 +25,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-	<h1 class="navbar-brand text-uppercase fw-bold display-1">galerie nahoře</h1>
-	<button
-		class="navbar-toggler"
-		type="button"
-		data-bs-toggle="collapse"
-		data-bs-target="#navbarNavAltMarkup"
-		aria-controls="navbarNavAltMarkup"
-		aria-expanded="false"
-		aria-label="Toggle navigation"
-	>
-		<span class="navbar-toggler-icon" />
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<div class="pe-5 navbar-nav ms-auto">
-			<a class="nav-item nav-link text-uppercase" href="/">aktuální výstava</a>
-			<a class="nav-item nav-link text-uppercase" href="/">o galerii</a>
-			<a class="nav-item nav-link text-uppercase" href="/">kalendář akcí</a>
-			<a class="nav-item nav-link text-uppercase" href="/">kontakt</a>
-			<!-- <div class="d-none d-md-block border-start border-1 mx-1" /> -->
+<div class="px-5">
+	<nav class="navbar navbar-expand-lg flex-column align-items-stretch pb-3">
+		<!-- TODO galery logo -->
+		<div class="d-flex bottom-line mb-3">
+			<h1 class="navbar-brand galery-title">galerie nahoře</h1>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon" />
+			</button>
 		</div>
-	</div>
-</nav>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav w-100">
+				<a class="nav-item nav-link navbar-button" href="/">aktuální výstava</a>
+				<a class="nav-item nav-link navbar-button ms-5" href="/">o galerii</a>
+				<a class="nav-item nav-link navbar-button ms-5" href="/">kalendář akcí</a>
+				<a class="nav-item nav-link navbar-button ms-5" href="/">kontakt</a>
+				<div class="container-fluid"></div>
+				<a class="nav-item nav-link navbar-button" href="/">cz</a>
+				<!-- TODO slash? -->
+				<a class="nav-item nav-link navbar-button" href="/">en</a>
+			</div>
+		</div>
+	</nav>
 
-<slot />
+	<!-- NOTE vertical divider -->
+	<!-- <div class="d-none d-md-block border-start border-1 mx-1" /> -->
+	<slot />
+</div>
 
 <style lang="scss">
+	:root {
+		--black: #222222;
+		--white: white;
+	}
+
 	@font-face {
 		font-family: 'SpaceGrotesk';
 		src: url('/SpaceGrotesk-VariableFont_wght.ttf');
@@ -63,7 +79,28 @@
 
 	:global(p, h1, h2, h3, h4, h5, h6, a) {
 		font-family: 'SpaceGrotesk', 'Courier New', monospace;
+        color: var(--black) !important;
 	}
 
-	:global();
+    :global(.bottom-line){
+        border-bottom: 1.5px solid var(--black);
+    }
+
+    /* TODO unify these font styles across all files */
+	:global(.galery-title) {
+		font-size: 4.063rem;
+		font-weight: 300;
+		line-height: 5.184rem;
+		letter-spacing: 0em;
+		text-transform: uppercase;
+	}
+
+	.navbar-button {
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.25rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		min-width: fit-content;
+	}
 </style>
