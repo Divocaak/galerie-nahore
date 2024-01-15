@@ -18,7 +18,7 @@
 <div class="calendar top-line bottom-line mb-5 py-3">
 	<Carousel slides={data.calendar} dragFree={false} layout={{ xs: 1, sm: 1, md: 2, lg: 3, xl: 4 }}>
 		<div slot="slide" let:slide>
-			<CalendarCard {...slide} />
+			<CalendarCard title={slide[$lang + '_title']} {...slide} />
 		</div>
 	</Carousel>
 </div>

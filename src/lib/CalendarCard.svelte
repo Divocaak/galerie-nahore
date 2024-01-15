@@ -2,9 +2,11 @@
 	import DateText from '$lib/DateText.svelte';
 
 	export let title = '';
+
 	export let dateStart = '';
 	export let dateEnd = '';
 	export let imgPath = '0';
+
 	export let last = false;
 </script>
 
@@ -55,7 +57,7 @@
 		font-weight: 500;
 		line-height: 1.556rem;
 		letter-spacing: 0.05em;
-		
+
 		position: absolute;
 		bottom: -1rem;
 	}
