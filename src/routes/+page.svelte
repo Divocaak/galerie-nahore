@@ -1,23 +1,39 @@
 <script>
+	import { lang } from '$lib/stores/LangStore.js';
+	import langs from '$lib/localization.json';
+	import data from '/dynamic/data.json';
 	import DetailedCard from '$lib/DetailedCard.svelte';
+	import CalendarCard from '$lib/CalendarCard.svelte';
+	import Carousel from 'svelte-light-carousel';
 </script>
 
 <DetailedCard
-	title={'lorem ipsum'}
-	author={'vojtěch divoký'}
-	dateStart={'asd'}
-	dateEnd={'dsa'}
-	desc={'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam rhoncus aliquam metus. Donec vitae arcu. Fusce nibh. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nullam at arcu a est sollicitudin euismod. Suspendisse sagittis ultrices augue. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Etiam egestas wisi a erat. Donec vitae arcu. Duis risus.'}
-	anchorLabel={'aktuální výstava'}
+	title={data.actual[$lang + '_title']}
+	description={data.actual[$lang + '_description']}
+	{...data.actual}
+	anchorLabel={langs[$lang].nav.actual}
+	anchor={'actual'}
 />
+<h2 class="anchor-button-date-text text-end mt-5" id="calendar">{langs[$lang].nav.calendar}</h2>
+<div class="calendar top-line bottom-line mb-5 py-3">
+	<Carousel slides={data.calendar} dragFree={false} layout={{ xs: 1, sm: 1, md: 2, lg: 3, xl: 4 }}>
+		<div slot="slide" let:slide>
+			<CalendarCard {...slide} />
+		</div>
+	</Carousel>
+</div>
 <DetailedCard
-	title={'Dolor sit amet'}
-	author={'jakub máče'}
-	dateStart={'asd'}
-	dateEnd={'dsa'}
-	desc={'In enim a arcu imperdiet malesuada. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Aenean fermentum risus id tortor. Mauris metus. Etiam dictum tincidunt diam. Et harum quidem rerum facilis est et expedita distinctio. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Maecenas aliquet accumsan leo. Nullam at arcu a est sollicitudin euismod. Sed ac dolor sit amet purus malesuada congue. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo.'}
-	anchorLabel={'o galerii'}
-    imgPath={"1"}
+	title={data.about[$lang + '_title']}
+	description={data.about[$lang + '_description']}
+	{...data.about}
+	anchorLabel={langs[$lang].nav.about}
+	anchor={'about'}
 />
 
-<!-- URGENT footer -->
+<style>
+	.calendar {
+		position: relative;
+		width: 100%;
+		min-height: 600px;
+	}
+</style>
