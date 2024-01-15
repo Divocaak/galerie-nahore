@@ -19,7 +19,6 @@
 <div class="title-wrapper mt-4 mt-md-5">
 	<h3 class="gallery-title">{title}</h3>
 	{#if anchorLabel != null}
-	<!-- TODO lang -->
 		<h2 class="anchor-button-date-text anchor-position bottom-line">{anchorLabel}</h2>
 	{/if}
 </div>
