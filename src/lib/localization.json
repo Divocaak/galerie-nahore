@@ -1,0 +1,52 @@
+{
+    "cs": {
+        "nav": {
+            "actual": "aktuální výstava",
+            "about": "o galerii",
+            "calendar": "kalendář akcí",
+            "contact": "kontakt"
+        },
+        "footer": [
+            {
+                "title": "Otevírací doba",
+                "line": "úterý—neděle: 9.00—21.00",
+                "secondLine": "vstup zdarma"
+            },
+            {
+                "title": "Adresa",
+                "line": "Senovážné náměstí 2",
+                "secondLine": "370 01 České Budějovice"
+            },
+            {
+                "title": "Doprava",
+                "line": "zastávka Metropol",
+                "secondLine": "spoje 2, 5, 9, 11, 13, 19"
+            }
+        ]
+    },
+    "en": {
+        "nav": {
+            "actual": "current exhibition",
+            "about": "about the gallery",
+            "calendar": "events calendar",
+            "contact": "contact"
+        },
+        "footer": [
+            {
+                "title": "Opening hours",
+                "line": "tuesday—sunday: 9:00 AM—9:00 PM",
+                "secondLine": "free admission"
+            },
+            {
+                "title": "Address",
+                "line": "Senovážné náměstí 2",
+                "secondLine": "370 01 České Budějovice"
+            },
+            {
+                "title": "Transportation",
+                "line": "Metropol bus stop",
+                "secondLine": "Buses 2, 5, 9, 11, 13, 19"
+            }
+        ]
+    }
+}

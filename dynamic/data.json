@@ -1,0 +1,60 @@
+{
+    "actual": {
+        "cs_title": "šťastné a veselé",
+        "en_title": "Merry Christmas",
+        "cs_description": "Lorem ipsum dolor sit amet consectetur. Dis urna arcu volutpat imperdiet quis euismod libero et. Feugiat cras aliquam at massa rhoncus ut purus. Rhoncus at elit id augue velit sit sodales enim. Pretium tristique neque tristique quam cursus turpis. Eget nam consectetur aliquam metus. Lobortis non nisl orci vitae molestie accumsan diam nisi morbi. Arcu donec sed hendrerit id et donec sed. Aenean sit morbi morbi cursus dignissim vitae. Pretium adipiscing dignissim id tincidunt aliquam.",
+        "en_description": "Et harum quidem rerum facilis est et expedita distinctio. Nullam at arcu a est sollicitudin euismod. Curabitur vitae diam non enim vestibulum interdum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Maecenas libero. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Aliquam ante. Duis condimentum augue id magna semper rutrum. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Donec vitae arcu. Nullam at arcu a est sollicitudin euismod. Aenean id metus id velit ullamcorper pulvinar. Fusce wisi. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum in, elit. Morbi scelerisque luctus velit.",
+        "author": "stanislava mrožíková",
+        "dateStart": "22. 4.",
+        "dateEnd": "17. 8. 2023",
+        "imgPath": "0"
+    },
+    "about": {
+        "cs_title": "spolu již 60 let",
+        "en_title": "together for 60 years",
+        "cs_description": "Galerie Nahoře sídlí v budově Domu kultury Metropol v Českých Budějovicích. Galerie slouží jako stálá výstavní síň fotografií. Lorem ipsum dolor sit amet consectetur. Dis urna arcu volutpat imperdiet quis euismod libero et. Feugiat cras aliquam at massa rhoncus ut purus. Rhoncus at elit id augue velit sit sodales enim.",
+        "en_description": "Gallery Nahoře is located in the building of the Metropol House of Culture in České Budějovice. The gallery serves as a permanent exhibition hall of photographs. Lorem ipsum dolor sit amet consectetur. Dis urna arcu volutpat imperdiet quis euismod libero et. Feugiat cras aliquam at massa rhoncus ut purus. Rhoncus at elit id augue velit sit sodales enim.",
+        "author": "stanislava mrožíková",
+        "dateStart": "22. 4.",
+        "dateEnd": "17. 8. 2023",
+        "imgPath": "1"
+    },
+    "calendar": [
+        {
+            "cs_title": "kurz ateliérové fotografie",
+            "en_title": "studio photography course",
+            "dateStart": "22. 4.",
+            "dateEnd": "17. 8. 2023",
+            "imgPath": "2"
+        },
+        {
+            "cs_title": "galerie nahoře v průběhu let",
+            "en_title": "gallery above over the years",
+            "dateStart": "22. 4.",
+            "dateEnd": "17. 8. 2023",
+            "imgPath": "3"
+        },
+        {
+            "cs_title": "vernisáž jakuba máčetetiho - velká nádhera",
+            "en_title": "the opening of Jakub Macheteti - great beauty",
+            "dateStart": "22. 4.",
+            "dateEnd": "17. 8. 2023",
+            "imgPath": "4"
+        },
+        {
+            "cs_title": "dechberoucí fotografie přírody hezké",
+            "en_title": "breathtaking photos of beautiful nature",
+            "dateStart": "22. 4.",
+            "dateEnd": "17. 8. 2023",
+            "imgPath": "5"
+        },
+        {
+            "cs_title": "výstava koncertních fotografií",
+            "en_title": "exhibition of concert photos",
+            "dateStart": "22. 4.",
+            "dateEnd": "17. 8. 2023",
+            "imgPath": "6",
+            "last": true
+        }
+    ]
+}
